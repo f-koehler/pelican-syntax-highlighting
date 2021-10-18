@@ -1,1 +1,1 @@
-from .syntax_highlighting import *  # NOQA
+from .syntax_highlighting import register  # noqa: F401
