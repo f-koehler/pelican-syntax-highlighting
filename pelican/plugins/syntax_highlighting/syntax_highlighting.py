@@ -6,7 +6,7 @@ from .markdown_extension import FencedCodeExtension
 
 def init_syntax(sender: Pelican):
     sender.settings["MARKDOWN"].setdefault("extensions", []).append(
-        FencedCodeExtension()
+        FencedCodeExtension(),
     )
 
 

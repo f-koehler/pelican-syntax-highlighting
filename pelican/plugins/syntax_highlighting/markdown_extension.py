@@ -8,7 +8,8 @@ from markdown.preprocessors import Preprocessor
 def render_code(code: str, language: str) -> str:
     rendered = (
         subprocess.check_output(
-            ["code2html", "-l", language, "-i", "-", "-o", "-"], input=code.encode()
+            ["code2html", "-l", language, "-i", "-", "-o", "-"],
+            input=code.encode(),
         )
         .decode()
         .strip()
@@ -38,5 +39,7 @@ class FencedCodeExtension(Extension):
     def extendMarkdown(self, md: Markdown):
         md.registerExtension(self)
         md.preprocessors.register(
-            FencedCodeProcessor(md), "syntax_highlighting_fenced_code_block", 200
+            FencedCodeProcessor(md),
+            "syntax_highlighting_fenced_code_block",
+            200,
         )

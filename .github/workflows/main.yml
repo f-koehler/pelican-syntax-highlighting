@@ -42,7 +42,6 @@ jobs:
       - name: Run tests
         run: poetry run invoke tests
 
-
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -69,7 +68,6 @@ jobs:
           poetry install
       - name: Run linters
         run: poetry run invoke lint --diff
-
 
   deploy:
     name: Deploy
