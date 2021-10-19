@@ -1,6 +1,6 @@
 # Syntax Highlighting: A Plugin for Pelican
 
-[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/syntax-highlighting/build)](https://github.com/f-koehler/pelican-syntax-highlighting/actions)
+[![Build Status](https://github.com/f-koehler/pelican-syntax-highlighting/actions/workflows/main.yml/badge.svg)](https://github.com/f-koehler/pelican-syntax-highlighting/actions/workflows/main.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/pelican-syntax-highlighting)](https://pypi.org/project/pelican-syntax-highlighting/)
 ![License](https://img.shields.io/pypi/l/pelican-syntax-highlighting?color=blue)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/f-koehler/pelican-syntax-highlighting/main.svg)](https://results.pre-commit.ci/latest/github/f-koehler/pelican-syntax-highlighting/main)
