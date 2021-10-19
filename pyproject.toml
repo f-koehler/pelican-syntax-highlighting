@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pelican-syntax-highlighting"
-version = "0.1.0"
+version = "0.1.1"
 description = "Highlight syntax using Prism.js, Highlight.js or Pygments"
 authors = ["Fabian Köhler <fabian.koehler@protonmail.ch>"]
 license = "AGPL-3.0"
