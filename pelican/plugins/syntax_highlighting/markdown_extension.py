@@ -7,10 +7,14 @@ from markdown.extensions import Extension, fenced_code
 from markdown.preprocessors import Preprocessor
 
 
-def render_code(code: str, language: str) -> str:
+def render_code(code: str, language: str | None) -> str:
+    cmd = ["code2html", "-i", "-", "-o", "-"]
+    if language:
+        cmd += ["-l", language]
+
     rendered = (
         subprocess.check_output(
-            ["code2html", "-l", language, "-i", "-", "-o", "-"],
+            cmd,
             input=code.encode(),
         )
         .decode()
