@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
 
     steps:
       - uses: actions/checkout@v2
@@ -67,7 +67,7 @@ jobs:
           poetry run pip install --upgrade pip
           poetry install
       - name: Run linters
-        run: poetry run invoke lint --diff
+        run: poetry run invoke lint
 
   deploy:
     name: Deploy
@@ -92,6 +92,7 @@ jobs:
         if: ${{ steps.check_release.outputs.release=='' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
           git remote set-url origin https://$GITHUB_TOKEN@github.com/${{ github.repository }}
@@ -99,4 +100,4 @@ jobs:
           poetry build
           autopub commit
           autopub githubrelease
-          poetry publish -u __token__ -p $PYPI_PASSWORD
+          poetry publish -u $PYPI_USERNAME -p $PYPI_PASSWORD
