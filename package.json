@@ -1,8 +1,5 @@
 {
-  "dependencies": {
-    "commander": "^8.2.0",
-    "highlight.js": "^11.2.0",
-    "prism-themes": "^1.9.0",
-    "prismjs": "^1.25.0"
-  }
+    "dependencies": {
+        "code2html": "^0.0.16"
+    }
 }
