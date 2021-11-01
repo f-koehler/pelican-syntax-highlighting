@@ -2,11 +2,13 @@ from pelican import Pelican
 import pelican.plugins.signals
 
 from .markdown_extension import FencedCodeExtension
+from .settings import SyntaxHighlightingSettings
 
 
 def init_syntax(sender: Pelican):
+    settings = SyntaxHighlightingSettings.from_settings(sender)
     sender.settings["MARKDOWN"].setdefault("extensions", []).append(
-        FencedCodeExtension(),
+        FencedCodeExtension(settings),
     )
 
 
