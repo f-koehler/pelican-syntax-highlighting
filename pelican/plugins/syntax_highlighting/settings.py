@@ -7,7 +7,8 @@ class SyntaxHighlightingSettings:
     def __init__(self):
         self.backend = "prism.js"
         self.linenos = True
-        self.cssclass = "highlight"
+        self.css_class = "highlight"
+        self.linenos_class = "linenos"
 
     @staticmethod
     def from_settings(pelican: Pelican) -> SyntaxHighlightingSettings:
@@ -19,6 +20,7 @@ class SyntaxHighlightingSettings:
 
         obj.backend = settings.get("backend", obj.backend)
         obj.linenos = settings.get("linenos", obj.linenos)
-        obj.cssclass = settings.get("cssclass", obj.cssclass)
+        obj.css_class = settings.get("css_class", obj.css_class)
+        obj.linenos_class = settings.get("linenos_class", obj.linenos_class)
 
         return obj
