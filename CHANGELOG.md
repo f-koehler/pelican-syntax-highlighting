@@ -1,9 +1,5 @@
-# CHANGELOG
 
-## 0.1.1 - 2021-10-19
+0.2.0 - 2021-11-01
+------------------
 
-Allow fenced code blocks without a language set.
-
-## 0.1.0 - 2021-10-19
-
-Initial release.
+Add settings to plugin.
