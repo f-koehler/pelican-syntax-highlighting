@@ -14,7 +14,17 @@ def render_code(
     language: str | None,
     settings: SyntaxHighlightingSettings,
 ) -> str:
-    cmd = ["code2html", "-b", settings.backend, "-i", "-", "-o", "-"]
+    cmd = [
+        "code2html",
+        "--backend",
+        settings.backend,
+        "--class",
+        settings.cssclass,
+        "--input",
+        "-",
+        "--output",
+        "-",
+    ]
 
     if language:
         cmd += ["-l", language]
