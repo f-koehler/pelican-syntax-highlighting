@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-code2html@^0.0.26:
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/code2html/-/code2html-0.0.26.tgz#8b71b9e932228e03bb9c3e735c22414061dc18e4"
-  integrity sha512-oXuHycEAsQYFnAdgHbZWt6Ka3s7TVm8TyuyBwSKjQC8ezD6Syp23m03w6fhbJ+fiL7dGG7hc0NSy1lGC6/39jw==
+code2html@^0.0.27:
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/code2html/-/code2html-0.0.27.tgz#07135e48d78106e2ec59fb7cec7230c7bdec6c36"
+  integrity sha512-zHF0tuhFpftRWZ+fK5pNBN7pp4o/WLN5FEUAIrG/BzAhSewbntOvJ55bbV7D9hlipBj/hA4F29aNBdkmLZWPfg==
   dependencies:
     commander "^8.2.0"
     highlight.js "^11.3.1"
