@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-code2html@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/code2html/-/code2html-0.0.28.tgz#570ca40f6ac54d969fd2a57aa7e9b3f15401c83f"
-  integrity sha512-2is06tTV9CkM3WbWe+mpw8qcq5e+3NQPTmjCcw5A5BtkaP/nEG6QyQ2PCMAycSMYkK6w9i9r7I8xXOZr+/NriQ==
+code2html@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/code2html/-/code2html-0.0.29.tgz#0139e6b37b0af6144e15f04d83c81b904b244650"
+  integrity sha512-YVn5/xeyHwjceF8V5oM9qiVfw/2oKInNk4HrDtU58qW1zgIstZWcfh7An7byiYqMBunDOhGLJ2DdNJ0a92V06g==
   dependencies:
-    commander "^8.2.0"
+    commander "^9.0.0"
     highlight.js "^11.3.1"
     prism-themes "^1.9.0"
     prismjs "^1.25.0"
 
-commander@^8.2.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
-  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
+commander@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
+  integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
 
 highlight.js@^11.3.1:
   version "11.3.1"
