@@ -22,6 +22,8 @@ def render_code(
         settings.css_class,
         "--linenos-class",
         settings.linenos_class,
+        "--wrap-class",
+        settings.wrap_class,
         "--input",
         "-",
         "--output",
@@ -33,6 +35,9 @@ def render_code(
 
     if settings.linenos:
         cmd.append("--linenos")
+
+    if settings.wrap:
+        cmd.append("--wrap")
 
     rendered = (
         subprocess.check_output(
