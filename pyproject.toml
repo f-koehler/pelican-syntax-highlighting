@@ -28,7 +28,7 @@ classifiers = [
 [tool.poetry.dependencies]
 markdown = {version = ">=3.2", optional = true}
 pelican = ">=4.5"
-python = ">=3.10"
+python = ">=3.10,<4.0"
 
 [tool.poetry.dev-dependencies]
 Werkzeug = "^2.0"
