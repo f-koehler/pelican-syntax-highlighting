@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-code2html@^0.0.31:
+code2html@0.0.31:
   version "0.0.31"
   resolved "https://registry.yarnpkg.com/code2html/-/code2html-0.0.31.tgz#9a51f25deb747c14a31b54e86e4ed89cdd5365dd"
   integrity sha512-1V6xExrWZ/C6hhIu+2JAHG4WwdB7GuiJyYrsGKPO1CVQzhU3jE6YRu4/IpuLTGAUCepazhdNIVxvM0CoysgDsg==
