@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import shutil
 import subprocess
 
 from markdown.core import Markdown
@@ -14,7 +15,14 @@ def render_code(
     language: str | None,
     settings: SyntaxHighlightingSettings,
 ) -> str:
-    cmd = [
+    if shutil.which("code2html"):
+        cmd = ["code2html"]
+    elif shutil.which("npx"):
+        cmd = ["npx", "code2html"]
+    else:
+        raise RuntimeError("Found no way to run code2html")
+
+    cmd += [
         "code2html",
         "--backend",
         settings.backend,
