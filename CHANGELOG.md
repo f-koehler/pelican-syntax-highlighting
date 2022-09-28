@@ -1,3 +1,8 @@
-## 0.3.0 - 2022-04-08
 
-Add option to wrap rendered code in a `<div>` element. Also bump required Python version to `3.10`.
+0.4.0 - 2022-09-28
+------------------
+
+Try to run code2html via npx.
+
+Contributed by [renovate](https://github.com/renovate) via [PR #60](https://github.com/f-koehler/pelican-syntax-highlighting/pull/60/)
+
