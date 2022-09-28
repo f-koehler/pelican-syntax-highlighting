@@ -23,7 +23,6 @@ def render_code(
         raise RuntimeError("Found no way to run code2html")
 
     cmd += [
-        "code2html",
         "--backend",
         settings.backend,
         "--class",
