@@ -1,3 +1,5 @@
-## 0.4.1 - 2022-09-28
 
-Fix call of code2html.
+0.4.2 - 2023-06-27
+------------------
+
+Maintenance release to update dependencies.
